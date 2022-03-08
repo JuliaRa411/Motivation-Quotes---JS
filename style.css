@@ -1,0 +1,121 @@
+body{
+background-image: url(https://images.unsplash.com/photo-1531748049999-7217dc4cfbd1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60;);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+
+#btn{
+    background: linear-gradient(104deg, rgb(227, 230, 203) 0%, rgb(248, 185, 91) 100%);
+    padding: 10px;
+    border-radius: 20px;
+    position: fixed;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 200px;
+    font-size: 50px;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 50px;
+    }
+
+  
+    #par{
+        text-transform: uppercase;
+        color: rgb(248, 241, 241);
+        margin-top: 500px;
+        padding: 15px;
+        display: none;
+        text-align: center;
+        font-family: 'Dancing Script', cursive;
+        font-size: 50px;
+        font-weight: bolder;
+        width: 70%;
+        margin-top: 300px;
+    }
+
+
+
+    /*  ANIMATION */
+
+ 
+    
+#atom { position: absolute; top: 50%; left: 50%; width:300px; margin-left: 270px; margin-top: -310px; }
+
+#cloud { width:300px; height:300px; perspective: 1000; position:relative; }
+
+#nucleus { position:absolute; top:50%; left:50%; margin: -10px 0 0 -10px; width:25px; height:25px; border-radius:25px; background: #272727;}
+
+.orbit { position:absolute; top:0; left:0; width:300px; height:300px; border-radius:300px; border:7px solid rgb(248, 238, 238); transform-style: preserve-3d; transform: rotateX(80deg) rotateY(20deg);}
+
+#cloud .orbit:nth-child(2) {transform: rotateX(80deg) rotateY(70deg)}
+#cloud .orbit:nth-child(3) {transform: rotateX(80deg) rotateY(-20deg)}
+#cloud .orbit:nth-child(4) {transform: rotateX(80deg) rotateY(-50deg)}
+
+.path { width:300px; height:300px; position:relative; transform-style: preserve-3d; }
+
+.electron { position: absolute; top:-5px; left:50%; margin-left:-5px; width:10px; height:10px; border-radius:10px; background:#ccc; transform:rotateX(90deg); }
+  
+
+
+
+
+@media all and (max-width:800px){
+    body{
+         
+        background-repeat: no-repeat;
+  
+      
+        }
+    #par{
+      font-size: 60px;
+       padding: 5px;
+       margin-top: 150px;
+            }
+   
+  #btn{
+    font-size: 40px;
+    margin-top: -150px;
+    width: 70%;
+         }
+
+
+         #atom{
+             margin-left: -150px;
+             margin-top: -500px;
+            
+         }
+         #electron{
+            width: 20%;
+            height: 20%;
+         }
+}
+
+@media all and (max-width:500px){
+        
+        #par{
+          font-size: 40px;
+           padding: 5px;
+           margin-top: 300px;
+                }
+       
+      #btn{
+        font-size: 30px;
+        margin-top: 150px;
+             }
+
+
+             #atom{
+                 margin-left: -150px;
+                 margin-top: -350px;
+                
+             }
+             #electron{
+                width: 20%;
+                height: 20%;
+             }
+    }
